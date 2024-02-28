@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Arrangly - All-in-One Service Platform</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <!-- Bootstrap Icons-->
+        <link href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="../cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Font-->
+        <link href="css/fonts.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand d-flex align-items-center" href="#page-top"><img src="assets/logo.png" class="nav-logo" alt="Your Logo"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tournaments">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#news">About Us</a></li>
+                <li class="nav-item mr-4"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <!-- Trigger for the Login/Sign Up Modal -->
+            <button type="button" class="btn btn-primary btn-xl custom-login-btn" data-bs-toggle="modal" data-bs-target="#loginSignupModal">GET STARTED</button>
+        </div>
+    </div>
+</nav>
+
+<!-- Login / Sign Up Modal -->
+<div class="modal fade" id="loginSignupModal" tabindex="-1" aria-labelledby="loginSignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-glass">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-center w-100" id="loginSignupModalLabel" >Login / Sign Up</h5>
+                <button type="button" class="close text-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+            <div class="modal-body px-5">
+                <!-- Tabs for Login and Sign Up -->
+                <ul class="nav nav-tabs justify-content-center" id="authTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active text-white" id="login-tab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link text-white" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="false">Sign Up</a>
+                    </li>
+                </ul>
+                
+                <div class="tab-content mt-4" id="authTabContent">
+                    <!-- Login Form -->
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <form>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="loginEmail">Email address</label>
+                                <input type="email" id="loginEmail" class="form-control" />
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="loginPassword">Password</label>
+                                <input type="password" id="loginPassword" class="form-control" />
+                            </div>
+                            
+                            <!-- Login button -->
+                            <button class="custom-login-btn-modal">Login</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Sign Up Form -->
+                    <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                        <form>
+                            <!-- Name input -->
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                </div>
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="signupEmail">Email address</label>
+                                <input type="email" id="signupEmail" class="form-control" />
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="signupPassword">Password</label>
+                                <input type="password" id="signupPassword" class="form-control" />
+                            </div>
+
+                            <!-- Confirm Password input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="signupConfirmPassword">Confirm Password</label>
+                                <input type="password" id="signupConfirmPassword" class="form-control" />
+                            </div>
+                            <!-- Checkbox for Terms & Conditions -->
+                            <div class="form-check mt-3 mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="termsAndConditions">
+                                <label class="form-check-label" for="termsAndConditions">
+                                    I agree to the <a href="#link-to-terms" class="text-white">Terms & Conditions</a>.
+                                </label>
+                            </div>
+                            <!-- Sign Up button -->
+                            <button class="custom-login-btn-modal">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="separator text-white my-4">
+                    <span>OR</span>
+                </div>
+
+                <!-- Google Authentication Button -->
+                <button type="button" class="btn btn-outline-light auth-button mb-3" style="background-color: rgb(245, 245, 245); color: #545454;">
+                    <img src="assets/icon.png" alt="Google Icon" style="width: 20px; margin-right: 8px;">Continue with Google
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Masthead -->
+<header class="masthead" style="position: relative;">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center">
+            <div class="col-lg-6 d-flex flex-column justify-content-center"> 
+                <h1 class="text-white font-weight-bold">Your Gateway to Planning <span class="highlight">Brilliance</span></h1>
+                <p class="text-white-75 mb-4">Effortlessly structure your day with our tool! Get alerts, synchronize tasks, and reshape time management.</p>
+                
+                <!-- App Availability Buttons -->
+                <div class="d-flex app-icons mb-4">
+                    <a href="link-to-appstore.html" class="mr-3 app-link"><img src="assets/img/app-store-badge.svg" alt="Available on iOS" width="160"></a>
+                    <a href="link-to-playstore.html" class="app-link"><img src="assets/img/google-play-badge.svg" alt="Available on Android" width="160"></a>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center"> 
+                <img src="assets/img/header.png" class="img-fluid smooth-move" alt="App Preview">
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Schedule-App-Features-Section-Start -->
+<section class="schedule_app_features_section py-5" id="features">
+    <!-- container start -->
+    <div class="container">
+        <div class="section_title text-center mb-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <h2><span>Features</span> of Our Schedule App</h2>
+            <p>Effortlessly plan, organize, and execute your daily tasks with our state-of-the-art scheduling platform.</p>
+        </div>
+        <div class="row">
+            <!-- Feature 1 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="feature_item text-center">
+                    <div class="icon mb-3">
+                        <img src="assets/img/shedule.png" alt="Smart Scheduling">
+                    </div>
+                    <h4>Smart Scheduling</h4>
+                    <p>Our AI-powered algorithms ensure optimal scheduling to boost productivity.</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="feature_item text-center">
+                    <div class="icon mb-3">
+                        <img src="assets/img/device.png" alt="Sync Across Devices">
+                    </div>
+                    <h4>Sync Across Devices</h4>
+                    <p>Keep your schedules in sync across all your devices in real-time.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="feature_item text-center">
+                    <div class="icon mb-3">
+                        <img src="assets/img/ui.png" alt="Intuitive UI">
+                    </div>
+                    <h4>Intuitive UI</h4>
+                    <p>Enjoy a user-friendly interface that ensures smooth navigation and user experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- container end -->
+</section>
+<!-- Schedule-App-Features-Section-end -->
+
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDY69yN1ArDztBVRiaS18o9Yi2-r-tO9O8",
+      authDomain: "arragly.firebaseapp.com",
+      projectId: "arragly",
+      storageBucket: "arragly.appspot.com",
+      messagingSenderId: "1004055446843",
+      appId: "1:1004055446843:web:cbcde0eff388dadcf2231e",
+      measurementId: "G-9R9K5F9GKM"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+       
+        <!-- Bootstrap core JS-->
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="../cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+
+
+</html>
